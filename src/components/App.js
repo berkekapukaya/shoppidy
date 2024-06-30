@@ -3,7 +3,7 @@ import React, {useEffect} from 'react';
 import Home from "./Home";
 import SearchPage from "./SearchPage";
 import {useState} from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Layout from "./Layout";
 import CategoryPage from "./CategoryPage";
 import PageNotFound from "./PageNotFound";
@@ -97,9 +97,9 @@ const getSubTotal = (cart) => {
 }
 
   return (
-      <BrowserRouter>
+      <HashRouter>
           <Routes>
-              <Route path="/shoppidy" element={<Layout
+              <Route path="/" element={<Layout
                   increaseQuantity={increaseQuantity}
 
                   decreaseQuantity={decreaseQuantity}
@@ -137,7 +137,7 @@ const getSubTotal = (cart) => {
                   <Route path="temizlik_malzemeleri" element={<CategoryPage category="Temizlik Malzemeleri" productData={productData} onAdd={addToCart} />} />
               </Route>
           </Routes>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 

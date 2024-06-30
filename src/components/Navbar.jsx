@@ -190,7 +190,7 @@ const Navbar = ({cartItems, axiosData, productData, setCartItems, setIsCartEmpty
                 </div>
             </div>
             <ul className="links-container">
-                <li className="link-item"><Link className="link" to="/shoppidy">Anasayfa</Link></li>
+                <li className="link-item"><Link className="link" to="/">Anasayfa</Link></li>
                 <li className="link-item"><Link className="link" to="meyveler">Meyveler</Link></li>
                 <li className="link-item"><Link className="link" to="icecekler">İçecekler</Link></li>
                 <li className="link-item"><Link className="link" to="atistirmaliklar">Atıştırmalıklar</Link></li>
