@@ -1,0 +1,118 @@
+
+
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: fixed;
+    top: 120px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    width: 450px;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+}
+
+.login-container h2{
+    margin-bottom: 20px;
+}
+
+.sign-logo{
+    font-family: "McLaren", cursive;
+}
+
+.checks{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.login-input{
+    padding: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.submit-login-btn{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #383838;
+    color: #fff;
+    border-radius: 3px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.user-dropdown {
+    position: absolute;
+    top: 50px; /* Adjust this value according to your design */
+
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.link-signin{
+    color: #383838;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .5s;
+    margin: 10px 0;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.link-signin:hover{
+    opacity: 1;
+}
+
+.user-dropdown button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.user-dropdown button:hover {
+    background-color: #f0f0f0;
+}
+
+.error-login{
+    color: red;
+    margin: 10px;
+}

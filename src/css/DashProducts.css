@@ -1,0 +1,211 @@
+
+/* Modal.css */
+.dash-products-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dash-products-content {
+    position: fixed;
+    top: 105px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    min-width: 1200px;
+    min-height: 850px;
+}
+
+.dash-product-container{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    overflow-y: auto;
+    max-height: 800px;
+    min-height: 600px;
+
+}
+
+.submit-btn{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #383838;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.dash-product{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    width: 100%;
+    flex-direction: row;
+    border-bottom: 1px solid #d1d1d1;
+    padding: 10px;
+}
+
+.dash-product-titles{
+    display: flex;
+    margin: 10px 210px;
+    width: 600px;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.dash-product-name{
+    width: 300px;
+}
+
+.dash-product-category{
+    width: 275px;
+}
+
+.dash-product-price{
+    width: 150px;
+}
+
+
+
+.dash-product img{
+    width: 125px;
+    height: 125px;
+}
+
+.dash-product p{
+    display: flex;
+    align-items: center;
+
+}
+
+.dash-each-category{
+    width: 150px;
+    margin: 50px 0;
+}
+
+.dash-product h3{
+    display: flex;
+    align-items: center;
+    width: 150px;
+}
+
+.button-group{
+    margin: 10px 0;
+}
+
+.button-group button{
+    background: #383838;
+}
+
+.sub-total{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-end;
+    margin: 10px 0;
+    width: 450px;
+}
+
+.delete-confirm{
+    display: flex;
+    flex-direction: column;
+    width: 276px;
+}
+
+.delete-confirm p{
+    font-size: 18px;
+}
+
+.delete-confirm-btn{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #383838;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-confirm-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.dash-product-btn{
+    position: relative;
+    top: 3em;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #383838;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
+
+.dash-product-input{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    margin: 40px 0;
+    line-height: 40px;
+    color: #383838;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+}
+
+.dash-product-select{
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin: 40px 0;
+}
+
+.dash-product label{
+    display: flex;
+    align-items: center;
+}
+
+#edit-btn{
+    background: #a9a9a9;
+}
+
+.confirmation-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    transition: opacity 1s; /* Transition for opacity property */
+    opacity: 1; /* Initially visible */
+}
+
+.confirmation-message.hidden {
+    opacity: 0; /* Make the message invisible */
+}
