@@ -26,7 +26,7 @@ function App() {
     }, [])
 
     const axiosData = async () => {
-        await axios.get('/api/products')
+        await axios.get('https://mynode-mb4z.onrender.com/api/products')
             .then(res => {
                 setProductData(res.data)
             })
