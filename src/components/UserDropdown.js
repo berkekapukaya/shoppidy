@@ -8,7 +8,7 @@ const UserDropdown = (props) => {
     const isAdmin = localStorage.getItem('isAdmin');
 
     return (
-            <div ref={containerRef} style={{left: position.left}} className="user-dropdown">
+            <div ref={containerRef} style={{left: position.left + 70}} className="user-dropdown">
                 {/* Show user dropdown when logged in */}
 
                 {isAdmin === 'true' && <>
