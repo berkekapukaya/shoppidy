@@ -26,7 +26,7 @@ function App() {
     }, [])
 
     const axiosData = async () => {
-        await axios.get('http://localhost:3000/api/products')
+        await axios.get('/api/products')
             .then(res => {
                 setProductData(res.data)
             })
