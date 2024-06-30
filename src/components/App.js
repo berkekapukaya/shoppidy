@@ -11,6 +11,8 @@ import axios from "axios";
 
 function App() {
 
+  const URL = 'https://mynode-mb4z.onrender.com';
+
   const [cartItems, setCartItems] = useState([]);
 
   const [isCartEmpty, setIsCartEmpty] = React.useState(true);
@@ -26,7 +28,7 @@ function App() {
     }, [])
 
     const axiosData = async () => {
-        await axios.get('https://mynode-mb4z.onrender.com/api/products')
+        await axios.get(`${URL}/api/products`)
             .then(res => {
                 setProductData(res.data)
             })

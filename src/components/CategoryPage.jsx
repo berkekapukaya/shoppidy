@@ -9,8 +9,6 @@ const CategoryPage = ({onAdd, category, productData}) => {
 
     const filteredProducts = productData.filter((product) => {
 
-
-
        return product.category.name === category
     });
 

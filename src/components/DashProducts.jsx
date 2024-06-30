@@ -6,9 +6,11 @@ import DashEachProduct from "./DashEachProduct";
 
 const DashProducts = ({onClose, axiosData, productData}) => {
 
+    const URL = 'https://mynode-mb4z.onrender.com';
+
     const onDelete = async (id) => {
         await axios.delete(
-            `api/products/${id}`,
+            `${URL}/api/products/${id}`,
             {
                 headers: {
                     'x-auth-token': localStorage.getItem('token')

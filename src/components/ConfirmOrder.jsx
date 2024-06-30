@@ -5,13 +5,15 @@ import axios from "axios";
 
 const ConfirmOrder = ({subTotal, axiosData, setCartItems, cartItems, isOrderConfirmed, setIsOrderConfirmed, setIsCartEmpty}) => {
 
+    const URL = 'https://mynode-mb4z.onrender.com';
+
     const handleConfirmOrder = async () => {
 
         setIsOrderConfirmed(true);
 
         try {
             // Send POST request to add product
-            const response = await axios.post('/api/cart', cartItems);
+            const response = await axios.post(`${URL}/api/cart`, cartItems);
 
             if (response.status === 201) {
                 console.log('Product updated successfully');

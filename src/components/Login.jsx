@@ -21,6 +21,7 @@ const Login = ({ onClose, onLogin }) => {
     const [errorPassword, setErrorPassword] = useState('');
     const [errorConfirmPassword, setErrorConfirmPassword] = useState('')
 
+    const URL = 'https://mynode-mb4z.onrender.com';
 
     const handleChange = (event) => {
         const {name, value} = event.target;
@@ -54,7 +55,7 @@ const Login = ({ onClose, onLogin }) => {
         }
         if(email && password){
             try {
-                const response = await axios.post('api/users/auth', {
+                const response = await axios.post(`${URL}/api/users/auth`, {
                     email,
                     password,
                 });
@@ -131,7 +132,7 @@ const Login = ({ onClose, onLogin }) => {
             const {confirmPassword, ...rest} = user;
 
             try {
-                const response = await axios.post('api/users/create', rest);
+                const response = await axios.post(`${URL}api/users/create`, rest);
 
                 console.log(response.data)
                 // Assuming the backend returns a token upon successful login

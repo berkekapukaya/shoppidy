@@ -8,6 +8,8 @@ const DashEachUser = ({onDelete, fetchUsers, user}) => {
 
     const [isEditing, setIsEditing] = useState(false);
 
+    const URL = 'https://mynode-mb4z.onrender.com';
+
     const toggleEditMode = () => {
         setIsEditing(!isEditing)
     }
@@ -19,7 +21,7 @@ const DashEachUser = ({onDelete, fetchUsers, user}) => {
 
             const token = localStorage.getItem('token');
 
-            await axios.put(`api/users/auth/${userId}`,
+            await axios.put(`${URL}/api/users/auth/${userId}`,
                 rest,
                 {
                     headers: {

@@ -9,6 +9,8 @@ import Resizer from "react-image-file-resizer";
 
 const Dashboard = ( {onClose, axiosProductData}) => {
 
+    const URL = 'https://mynode-mb4z.onrender.com';
+
     const [product, setProduct] = useState({
         name: "",
         description: "",
@@ -32,7 +34,7 @@ const Dashboard = ( {onClose, axiosProductData}) => {
     }, [])
 
     const axiosData = async (processing) => {
-        await axios.get('http://localhost:3000/api/categories')
+        await axios.get(`${URL}/api/categories`)
             .then(res => {
                 if(processing){
                     setCategories(res.data)

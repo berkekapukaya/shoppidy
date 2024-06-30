@@ -8,12 +8,14 @@ const DashUsers = ({onClose}) => {
 
         const [userData, setUserData] = useState([]);
 
+        const URL = 'https://mynode-mb4z.onrender.com';
+
         useEffect(() => {
             fetchUsers();
         }, [])
 
         const fetchUsers = async () => {
-            await axios.get('api/users', {
+            await axios.get(`${URL}/api/users`, {
                 headers: {
                     'x-auth-token': localStorage.getItem('token')
                 }
@@ -28,7 +30,7 @@ const DashUsers = ({onClose}) => {
 
     const onDelete = async (id) => {
         await axios.delete(
-            `api/users/auth/${id}`,
+            `${URL}/api/users/auth/${id}`,
             {
                 headers: {
                     'x-auth-token': localStorage.getItem('token')

@@ -6,6 +6,8 @@ const Editing = ({ product,saveChanges,handleCancel}) => {
 
     const [updatedProduct, setUpdatedProduct] = useState({...product})
 
+    const URL = 'https://mynode-mb4z.onrender.com';
+
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setUpdatedProduct(prevState => ({
@@ -33,7 +35,7 @@ const Editing = ({ product,saveChanges,handleCancel}) => {
     }, [])
 
     const axiosData = async (processing) => {
-        await axios.get('http://localhost:3000/api/categories')
+        await axios.get(`${URL}/api/categories`)
             .then(res => {
                 if(processing){
                     setCategories(res.data)

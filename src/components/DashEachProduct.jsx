@@ -5,6 +5,8 @@ import Editing from "./Editing";
 
 const DashEachProduct = ({axiosData , onDelete, product}) => {
 
+    const URL = 'https://mynode-mb4z.onrender.com';
+
     const [editProductMode, setEditProductMode] = useState(false)
 
     const [isDeleting, setIsDeleting] = useState(false);
@@ -22,7 +24,7 @@ const DashEachProduct = ({axiosData , onDelete, product}) => {
 
             const token = localStorage.getItem('token');
 
-            await axios.put(`api/products/${productId}`,
+            await axios.put(`${URL}/api/products/${productId}`,
                 updatedProduct,
                 {
                     headers: {
