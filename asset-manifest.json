@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shoppidy/static/css/main.29300132.css",
+    "main.js": "/shoppidy/static/js/main.112d656f.js",
+    "static/media/revicons.eot": "/shoppidy/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/shoppidy/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/shoppidy/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/shoppidy/index.html",
+    "main.29300132.css.map": "/shoppidy/static/css/main.29300132.css.map",
+    "main.112d656f.js.map": "/shoppidy/static/js/main.112d656f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29300132.css",
+    "static/js/main.112d656f.js"
+  ]
+}
