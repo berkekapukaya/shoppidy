@@ -97,7 +97,7 @@ const getSubTotal = (cart) => {
   return (
       <BrowserRouter>
           <Routes>
-              <Route path="/" element={<Layout
+              <Route path="/shoppidy" element={<Layout
                   increaseQuantity={increaseQuantity}
 
                   decreaseQuantity={decreaseQuantity}
